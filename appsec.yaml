@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+hooks:
+  BeforeInstall:
+    -location: beforecicd.sh
+      runas: root
+
+  AfterInstall:
+    -location: aftercicd.sh
+      runas: root
