@@ -1,13 +1,13 @@
 version: 0.0
 os: linux
 files:
-  -source: /var/lib/jenkins/workspace/jenkins-codedeploy/index.html
+  - source: /var/lib/jenkins/workspace/jenkins-codedeploy/index.html
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    -location: beforecicd.sh
+    - location: beforecicd.sh
       runas: root
 
   AfterInstall:
-    -location: aftercicd.sh
+    - location: aftercicd.sh
       runas: root
