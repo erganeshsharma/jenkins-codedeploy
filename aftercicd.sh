@@ -1,1 +1,1 @@
-cp /var/lib/jenkins/workspace/jenkins-codedeploy/* /var/www/html/
+echo "Commands and scripts to be run after CI/CD."
