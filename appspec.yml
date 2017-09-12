@@ -4,9 +4,11 @@ files:
   - source: index.html
     destination: /var/www/html/
 hooks:
-  - location: scripts/beforecicd.sh
-    timeout: 300
-    runas: root
-  - location: scripts/aftercicd.sh
-    timeout: 300
-    runas: root
+  BeforeInstall:
+    - location: scripts/beforecicd.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/aftercicd.sh
+      timeout: 300
+      runas: root
